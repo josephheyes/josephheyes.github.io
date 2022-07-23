@@ -74,7 +74,7 @@ header {
     list-style: none;
 }
 
-a {
+.navbar a {
     color: var(--clr-light);
     text-decoration: none;
 }
