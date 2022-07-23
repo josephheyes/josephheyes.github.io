@@ -98,6 +98,7 @@ footer {
     background: #111;
     color: var(--clr-accent);
     text-align: center;
+    padding: 2.5em 0;
 }
 
 footer a {
@@ -110,13 +111,19 @@ footer a {
     font-weight: var(--fw-bold);
 }
 
-.social-item {
+.social-list {
     list-style: none;
     display: flex;
     justify-content: center;
     margin: 2em 0;
     padding: 0;
 }
+
+.social-item {
+    margin: 0 .5em;
+}
+
+.sco
 
 .footer-link:hover, .social-item:hover {
     opacity: .7;
