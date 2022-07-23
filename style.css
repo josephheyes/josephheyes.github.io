@@ -67,7 +67,7 @@
 /* nav menu */
 
 header {
-    background-color: var(--clr-dark);
+    background: var(--clr-dark);
 }
 
 .nav-menu li {
