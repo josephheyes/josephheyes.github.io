@@ -43,6 +43,7 @@ img {
 }
 
 section {
+    display: inline-block;
     padding-top: 20;
     padding-bottom: 20;
 }
