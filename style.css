@@ -93,7 +93,8 @@ h3 {
 
 /* intro section */
 .intro {
-    background: #111
+    background: #111;
+    padding-bottom: 0;
 }
 
 .intro .section-title, .intro .section-subtitle {
