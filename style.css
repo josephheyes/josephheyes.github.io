@@ -92,6 +92,13 @@ h2 {
     position: relative;
 }
 
+/* skills section */
+
+.skills-list {
+    display: flex;
+}
+
+
 /* footer */
 
 footer {
