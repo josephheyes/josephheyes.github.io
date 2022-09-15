@@ -91,6 +91,15 @@ h3 {
     font-family: var(--ff-code);
 }
 
+/* intro section */
+.intro {
+    background: #111
+}
+
+.intro .section-title, .section-subtitle {
+    color: var(--clr-light);
+}
+
 /* skills section */
 
 .skills p, li {
