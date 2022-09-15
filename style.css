@@ -86,7 +86,7 @@ h3 {
     font-size: var(--fs-h3);
 }
 
-.section-subtitle_intro {
+.section-subtitle_accented {
     background: var(--clr-accent);
     font-family: var(--ff-code);
 }
