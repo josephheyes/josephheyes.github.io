@@ -11,7 +11,7 @@
 
     --clr-light: #fff;
     --clr-dark: #1a1313;
-    --clr-accent: #289c6a;
+    --clr-accent: #37e69a;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -98,6 +98,10 @@ h3 {
 
 .intro .section-title, .intro .section-subtitle {
     color: var(--clr-accent);
+}
+
+.intro .section-title strong {
+    color: var(--clr-light);
 }
 
 .intro .section-subtitle_accented {
