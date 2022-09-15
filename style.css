@@ -93,11 +93,7 @@ h3 {
 
 /* skills section */
 
-.skills p {
-    font-size: var(--fs-h2);
-}
-
-.skills li {
+.skills p, li {
     font-size: var(--fs-h3);
 }
 
