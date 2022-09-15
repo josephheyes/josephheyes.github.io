@@ -97,6 +97,14 @@ h3 {
     font-size: var(--fs-h3);
 }
 
+.skills p {
+    font-weight: var(--fw-bold);
+}
+
+.skills li {
+    font-family: var(--ff-code);
+}
+
 /* footer */
 
 footer {
