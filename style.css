@@ -91,6 +91,16 @@ h3 {
     font-family: var(--ff-code);
 }
 
+/* skills section */
+
+.skills p {
+    font-size: var(--fs-h2);
+}
+
+.skills li {
+    font-size: var(--fs-h3);
+}
+
 /* footer */
 
 footer {
