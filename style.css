@@ -96,8 +96,12 @@ h3 {
     background: #111
 }
 
-.intro .section-title, .section-subtitle {
-    color: var(--clr-light);
+.intro .section-title, .intro .section-subtitle {
+    color: var(--clr-accent);
+}
+
+.intro .section-subtitle_accented {
+    color: var(--clr-dark)
 }
 
 /* skills section */
