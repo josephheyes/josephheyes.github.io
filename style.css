@@ -134,6 +134,7 @@ footer a {
 
 .social-item {
     margin: 0 .5em;
+    font-size: var(--fs-h1);
 }
 
 .footer-link:hover, .social-item:hover {
