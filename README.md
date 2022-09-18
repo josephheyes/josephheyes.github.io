@@ -1,1 +1,1 @@
-[Link to site](jheyes.dev)
+[Link to site](https://jheyes.dev)
