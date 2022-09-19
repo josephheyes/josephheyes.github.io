@@ -19,19 +19,6 @@
     --fs-body: 1rem;
 }
 
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
-
-    .navbar a {
-        font-size: 0.8rem;
-        padding: 4px 6px;
-    }
-}
 
 body {
     background: var(--clr-light);
@@ -167,11 +154,21 @@ h3 {
 
 .skills li {
     font-family: var(--ff-code);
-    display: inline-block;
     list-style: none;
-    padding: 15px;
+
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+    float: right;
     background-color: var(--clr-accent);
     border-radius: 5px;
+    height: 160px;
+    width: 160px;
 }
 
 /* projects */
@@ -270,4 +267,20 @@ footer a {
 
 .skills-list:nth-child(8) {
     transition-delay: 1400ms;
+}
+
+/* media query */
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+
+    .skill-container {
+        height: 60px;
+        width: 60px;
+    }
 }
