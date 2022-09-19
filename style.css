@@ -10,7 +10,7 @@
     --fw-bold: 900;
 
     --clr-light: #fff;
-    --clr-dark: #1a1313;
+    --clr-dark: rgb(0, 0, 0);
     --clr-accent: #47d4bd;
 
     --fs-h1: 3rem;
@@ -43,7 +43,10 @@ img {
 }
 
 section {
-    padding-top: 10%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
 /* fonts */
@@ -90,11 +93,45 @@ h3 {
     font-family: var(--ff-code);
 }
 
+/* navbar */
+
+.navbar {
+    background-color: var(--clr-dark);
+    overflow: hidden;
+}
+
+.navbar a {
+    float: right;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: var(--fs-body);
+}
+
+.navbar a:hover {
+    background-color: rgb(22, 21, 21);
+}
+
+.navbar a:active {
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 57px;
+}
+
 /* intro section */
 
 .intro {
-    background: #111;
-    padding-bottom: 3px;
+    background: rgb(0, 0, 0);
+    min-height: 15vh;
 }
 
 .intro .section-title, .intro .section-subtitle {
@@ -121,6 +158,11 @@ h3 {
 
 .skills li {
     font-family: var(--ff-code);
+    display: inline-block;
+    list-style: none;
+    padding: 15px;
+    background-color: var(--clr-accent);
+    border-radius: 5px;
 }
 
 /* projects */
@@ -170,4 +212,53 @@ footer a {
 
 .social-link:hover, .social-item:hover {
     opacity: .7;
+}
+
+/* hidden content */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.skills-list:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.skills-list:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.skills-list:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.skills-list:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.skills-list:nth-child(6) {
+    transition-delay: 1000ms;
+}
+
+.skills-list:nth-child(7) {
+    transition-delay: 1200ms;
+}
+
+.skills-list:nth-child(8) {
+    transition-delay: 1400ms;
 }
