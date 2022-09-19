@@ -290,4 +290,10 @@ footer a {
     .skills li {
         font-size: var(--fs-body);
     }
+
+    .navbar a {
+        font-size: 15px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 }
