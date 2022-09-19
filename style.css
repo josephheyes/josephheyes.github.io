@@ -98,6 +98,7 @@ h3 {
 .navbar {
     background-color: var(--clr-dark);
     overflow: hidden;
+    z-index: 1;
 }
 
 .navbar a {
@@ -117,6 +118,10 @@ h3 {
     text-decoration: underline;
 }
 
+.navbar .cv {
+    float: left;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -129,9 +134,8 @@ h3 {
 
 /* intro section */
 
-.intro {
-    background: rgb(0, 0, 0);
-    min-height: 15vh;
+.intro .section-title {
+    padding-bottom: 20px;
 }
 
 .intro .section-title, .intro .section-subtitle {
@@ -139,7 +143,7 @@ h3 {
 }
 
 .intro .section-title strong {
-    color: var(--clr-light);
+    color: var(--clr-dark);
 }
 
 .intro .section-subtitle_accented {
