@@ -280,11 +280,14 @@ footer a {
     }
 
     .skill-container {
+        margin: 2px;
+        float: none;
+        border-radius: 5px;
         height: 50px;
-        width: 50px;
+
     }
 
     .skills li {
-        font-size: 7px;
+        font-size: var(--fs-body);
     }
 }
