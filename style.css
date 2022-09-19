@@ -11,7 +11,7 @@
 
     --clr-light: #fff;
     --clr-dark: #1a1313;
-    --clr-accent: #37e69a;
+    --clr-accent: #47d4bd;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -43,7 +43,7 @@ img {
 }
 
 section {
-    padding-top: 2%;
+    padding-top: 10%;
 }
 
 /* fonts */
@@ -121,6 +121,19 @@ h3 {
 
 .skills li {
     font-family: var(--ff-code);
+}
+
+/* projects */
+
+.projects p {
+    font-family: var(--ff-sans);
+}
+
+.repo-link {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    color: var(--clr-accent);
+    text-decoration: none;
 }
 
 /* footer */
