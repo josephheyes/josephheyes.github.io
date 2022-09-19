@@ -13,10 +13,10 @@
     --clr-dark: rgb(0, 0, 0);
     --clr-accent: #47d4bd;
 
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
 }
 
 
@@ -167,8 +167,8 @@ h3 {
     float: right;
     background-color: var(--clr-accent);
     border-radius: 5px;
-    height: 160px;
-    width: 160px;
+    height: 150px;
+    width: 150px;
 }
 
 /* projects */
@@ -271,16 +271,20 @@ footer a {
 
 /* media query */
 
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
+@media (max-width: 800px) {
+    :root { 
+        --fs-h1: 3rem;
+        --fs-h2: 2.25rem;
+        --fs-h3: 1.25rem;
+        --fs-body: 1rem;
     }
 
     .skill-container {
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .skills li {
+        font-size: 7px;
     }
 }
