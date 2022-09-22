@@ -367,15 +367,15 @@ footer a {
     }
 
     .slider {
-        width: 400px;
-        height: 2500px;
+        width: 350px;
+        height: 500px;
         border-radius: 10px;
         overflow: hidden;
     }
     
     .nav-manual {
         position: absolute;
-        width: 400px;
+        width: 350px;
         margin-top: -40px;
         display: flex;
         justify-content: center;
