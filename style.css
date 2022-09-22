@@ -175,6 +175,7 @@ h3 {
 }
 
 .slider {
+    position: relative;
     width: 800px;
     height: 500px;
     border-radius: 10px;
@@ -255,6 +256,24 @@ h3 {
 
 #radio3:checked ~ .first {
     margin-left: -40%;
+}
+
+.arrow-wrapper {
+    display: none;
+    position: absolute;
+    flex-direction: row;
+    margin-bottom: -435px;
+}
+
+.arrow {
+    display: flex;
+    position: relative;
+    float: left;
+    width: 100px;
+    justify-content: center;
+    background-color: var(--clr-accent);
+    border: 3px solid var(--clr-dark);
+    border-radius: 5px;
 }
 
 .projects p {
@@ -379,5 +398,9 @@ footer a {
         margin-top: -40px;
         display: flex;
         justify-content: center;
+    }
+
+    .arrow-wrapper {
+        display: flex;
     }
 }
