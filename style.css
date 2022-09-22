@@ -365,4 +365,19 @@ footer a {
         padding-left: 2px;
         padding-right: 2px;
     }
+
+    .slider {
+        width: 400px;
+        height: 2500px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .nav-manual {
+        position: absolute;
+        width: 400px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
 }
