@@ -367,7 +367,7 @@ footer a {
     }
 
     .slider {
-        width: 350px;
+        width: 200px;
         height: 500px;
         border-radius: 10px;
         overflow: hidden;
@@ -375,7 +375,7 @@ footer a {
     
     .nav-manual {
         position: absolute;
-        width: 350px;
+        width: 200px;
         margin-top: -40px;
         display: flex;
         justify-content: center;
