@@ -25,26 +25,22 @@ window.onscroll = function() {
 
 const arrows = document.querySelectorAll('.arrow');
 const slide = document.querySelector('.first');
-const cssObj = window.getComputedStyle(slide, null);
 
 arrows.forEach(arrow => {
     arrow.addEventListener('click', () => {
         console.log("here");
             if (arrow.className === 'arrow left') {
-                const percentage = cssObj.getPropertyValue('margin-left');
-                console.log(percentage);
-                if (percentage != "0px" && percentage != "") {
+                const percentage = slide.style.marginLeft;
+                if (percentage != "0%" && percentage != "") {
                     const num = percentage.replace('%', '');
-
                     var newVal = parseInt(num, 10) + 20;
                     newVal = newVal + '%';
                     slide.style.marginLeft = newVal;
-                    console.log(slide.style.marginLeft);
+
                 }
             } else {
-                const percentage = cssObj.getPropertyValue('margin-left');
-                console.log("got value: " + percentage);
-                if (percentage === "0px") {
+                const percentage = slide.style.marginLeft;
+                if (percentage === "") {
                     slide.style.marginLeft = "-20%";
                 } else if (percentage != "-40%") {
                     const num = percentage.replace('%', '');
@@ -53,7 +49,6 @@ arrows.forEach(arrow => {
                     var newVal = parseInt(num, 10) - 20;
                     newVal = newVal + '%';
                     slide.style.marginLeft = newVal;
-                    console.log(slide.style.marginLeft);
                 }
             }
         })
