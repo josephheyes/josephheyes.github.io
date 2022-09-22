@@ -19,9 +19,9 @@
 
         <div class="navbar">
             <a class="navlink cv" href="CV-Joseph-Heyes.pdf">View my CV</a>
-            <a class="navlink" href="#about">About Me</a>
-            <a class="navlink" href="#skills">Technical Skills</a>
             <a class="navlink" href="#projects">My Projects</a>
+            <a class="navlink" href="#skills">Technical Skills</a>
+            <a class="navlink" href="#about">About Me</a>
         </div>
 
         <div class="content">
@@ -30,7 +30,7 @@
         <section class="intro hidden" id="about">
             <h1 class="section-title">Hello, I'm<strong>&lt Joseph Heyes &gt</strong></h1>
             <p class="section-subtitle  section-subtitle_accented">
-                I am a student at the University of Nottingham, studying BSc Computer Science. This website acts as a place where you can easily view my project portfolio and GitHub repositories.
+                I am a student at the University of Nottingham, studying BSc Computer Science. Here you can easily view my project portfolio and GitHub repositories.
             </p>
         </section>
 
@@ -39,24 +39,63 @@
         <section class="skills hidden" id="skills">
             <h2 class="section-title">Technical Skills</h2>
             <p class="section-subtitle">Languages and Frameworks:</p>
-            <ul class="skills-list">
-                <div class="skill-container hidden"><li class="skills-item ">Java (Including JUnit)</li></div>
-                <div class="skill-container hidden"><li class="skills-item ">Python</li></div>
-                <div class="skill-container hidden"><li class="skills-item ">C</li></div>
-                <div class="skill-container hidden"><li class="skills-item ">HTML CSS JavaScript</li></div>
-                <div class="skill-container hidden"><li class="skills-item ">SQL</li></div>
-            </ul>
+            <div class="skills-wrap">
+                <div class="skill-container hidden">SQL</div>
+                <div class="skill-container hidden">HTML CSS JavaScript</div>
+                <div class="skill-container hidden">C</div>
+                <div class="skill-container hidden">Python</div>
+                <div class="skill-container hidden">Java + JUnit</div>
+            </div>
             <p class="section-subtitle">Other skills:</p>
-            <ul class="skills-list">
-                <div class="skill-container"><li class="skills-item hidden">Git</li></div>
-                <div class="skill-container"><li class="skills-item hidden">Linux</li></div>
-            </ul>
+            <div class="skills-wrap">
+                <div class="skill-container hidden">Git</div>
+                <div class="skill-container hidden">Linux</div>
+            </div>
         </section>
 
         <!-- Projects -->
         <section class="projects hidden" id="projects">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">If you're interested, <a class="repo-link" href="https://github.com/josephheyes/leetcode-solutions" class="social-link">here</a> is where I store my solutions to various LeetCode problems</p>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+
+                    <div class="slide first">
+                        <div class="slide-content">
+                            LeetCode Solutions
+                            <p><a class="repo-link" href="https://github.com/josephheyes/leetcode-solutions/tree/main/solutions">Here</a> you can find my solutions to various LeetCode problems</p>
+                        </div>
+                        <img src="assets/leetcode.png">
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            Noughts & Crosses (Minimax)
+                            <p>For my A Level CS project I created a <a class="repo-link" href="https://github.com/josephheyes/noughts-and-crosses-minimax">Noughts & Crosses game</a> that uses the minimax algorithm,
+                                resulting in an unbeatable computer opponent.
+                            </p>
+                        </div>
+                        <img src="assets/minimax.png">
+                    </div>
+                    <div class="slide">
+                        <div class="slide content">
+                            Under Construction
+                        </div>
+                    </div>
+
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
         </section>
 
         </div>
