@@ -271,6 +271,7 @@ h3 {
     float: left;
     width: 100px;
     justify-content: center;
+    font-size: var(--fs-h3);
     background-color: var(--clr-accent);
     border: 3px solid var(--clr-dark);
     border-radius: 5px;
