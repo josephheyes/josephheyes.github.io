@@ -150,6 +150,7 @@ h3 {
 }
 
 .skills-wrap {
+    display: flex;
     flex-direction: row;
 }
 
@@ -368,12 +369,15 @@ footer a {
         font-size: var(--fs-body);
     }
 
+    .skills-wrap {
+        flex-direction: column;
+    }
+
     .skill-container {
         margin: 2px;
         float: none;
         border-radius: 5px;
         height: 50px;
-
     }
 
     .skills li {
