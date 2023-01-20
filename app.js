@@ -1,8 +1,8 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
+            observer.unobserve(entry.target);
         } else {
             entry.target.classList.remove('show');
         }
@@ -28,7 +28,6 @@ const slide = document.querySelector('.first');
 
 arrows.forEach(arrow => {
     arrow.addEventListener('click', () => {
-        console.log("here");
             if (arrow.className === 'arrow left') {
                 const percentage = slide.style.marginLeft;
                 if (percentage != "0%" && percentage != "") {
