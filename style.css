@@ -206,7 +206,7 @@ h3 {
 }
 
 .slide img {
-    filter: blur(2px);
+    filter: blur(1px);
 
     position: absolute;
     object-fit: cover;
