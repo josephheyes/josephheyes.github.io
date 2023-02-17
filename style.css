@@ -261,6 +261,10 @@ h3 {
     margin-left: -40%;
 }
 
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
 .arrow-wrapper {
     display: none;
     position: absolute;
@@ -291,7 +295,7 @@ h3 {
     color: var(--clr-accent);
     text-decoration: none;
 }
-
+arrow 
 .repo-link:hover {
     text-decoration: underline;
 }
