@@ -31,6 +31,13 @@ body {
     line-height: 1.6;
 }
 
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
 img {
     display: block;
     max-width: 100%;
